@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
@@ -15,8 +16,7 @@ app.use(cookieParser());
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI =
-  'mongodb+srv://moon:1234@cluster0.omexc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const dbURI = process.env.MONGO_URI;
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,

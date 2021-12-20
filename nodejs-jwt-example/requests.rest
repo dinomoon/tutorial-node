@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/auth/
+
+###
+
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "Kim",
+  "password": "1234"
+}
+
+###
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "Kim",
+  "password": "1234"
+}
+
+###
+
+GET http://localhost:3000/api/auth/check
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJmMDIzOTRiMmY0ODdiMWVjMDBlNjEiLCJ1c2VybmFtZSI6IkNob2kiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjM5OTA4OTk5LCJleHAiOjE2NDA1MTM3OTksImlzcyI6InZlbG9wZXJ0LmNvbSIsInN1YiI6InVzZXJJbmZvIn0.wqjcXbUBiGsHMiBE_6t5TOuE-crz06puGJYfHrEthhM
+
+###
+GET http://localhost:3000/api/user/list
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJmMDIzOTRiMmY0ODdiMWVjMDBlNjEiLCJ1c2VybmFtZSI6IkNob2kiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjM5OTA4OTk5LCJleHAiOjE2NDA1MTM3OTksImlzcyI6InZlbG9wZXJ0LmNvbSIsInN1YiI6InVzZXJJbmZvIn0.wqjcXbUBiGsHMiBE_6t5TOuE-crz06puGJYfHrEthhM
+
+###
+POST http://localhost:3000/api/user/assign-admin/Kim
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJmMDIzOTRiMmY0ODdiMWVjMDBlNjEiLCJ1c2VybmFtZSI6IkNob2kiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjM5OTA4OTk5LCJleHAiOjE2NDA1MTM3OTksImlzcyI6InZlbG9wZXJ0LmNvbSIsInN1YiI6InVzZXJJbmZvIn0.wqjcXbUBiGsHMiBE_6t5TOuE-crz06puGJYfHrEthhM
